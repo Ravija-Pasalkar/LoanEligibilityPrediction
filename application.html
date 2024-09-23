@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Loan Application</h2>
+        <form id="loanForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="married">Married Status:</label>
+            <select id="married" name="married" required>
+                <option value="yes">Married</option>
+                <option value="no">Unmarried</option>
+            </select>
+
+            <label for="education">Education:</label>
+            <select id="education" name="education" required>
+                <option value="graduate">Graduate</option>
+                <option value="not_graduate">Not Graduate</option>
+            </select>
+
+            <label for="loanAmount">Loan Amount:</label>
+            <input type="number" id="loanAmount" name="loanAmount" required>
+
+            <label for="loanTerm">Loan Term (in months):</label>
+            <input type="number" id="loanTerm" name="loanTerm" required>
+
+            <label for="propertyArea">Property Area:</label>
+            <select id="propertyArea" name="propertyArea" required>
+                <option value="urban">Urban</option>
+                <option value="rural">Rural</option>
+            </select>
+
+            <label for="creditHistory">Credit History:</label>
+            <select id="creditHistory" name="creditHistory" required>
+                <option value="1">1 (Good)</option>
+                <option value="0">0 (Bad)</option>
+            </select>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
