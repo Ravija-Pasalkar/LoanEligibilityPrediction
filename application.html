@@ -11,39 +11,39 @@
         <h2>Loan Application</h2>
         <form id="loanForm">
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name">
 
             <label for="married">Married Status:</label>
-            <select id="married" name="married" required>
+            <select id="married" name="married">
                 <option value="yes">Married</option>
                 <option value="no">Unmarried</option>
             </select>
 
             <label for="education">Education:</label>
-            <select id="education" name="education" required>
+            <select id="education" name="education">
                 <option value="graduate">Graduate</option>
                 <option value="not_graduate">Not Graduate</option>
             </select>
 
             <label for="loanAmount">Loan Amount (in lakhs):</label>
-            <input type="number" id="loanAmount" name="loanAmount" required>
+            <input type="number" id="loanAmount" name="loanAmount">
 
             <label for="loanTerm">Loan Term (in months):</label>
-            <input type="number" id="loanTerm" name="loanTerm" required>
+            <input type="number" id="loanTerm" name="loanTerm">
 
             <label for="propertyArea">Property Area:</label>
-            <select id="propertyArea" name="propertyArea" required>
+            <select id="propertyArea" name="propertyArea">
                 <option value="urban">Urban</option>
                 <option value="rural">Rural</option>
             </select>
 
             <label for="creditHistory">Credit History:</label>
-            <select id="creditHistory" name="creditHistory" required>
+            <select id="creditHistory" name="creditHistory">
                 <option value="1">Good</option>
                 <option value="0">Bad</option>
             </select>
 
-            <button type="submit">Submit Application</button>
+            <button type="submit">Check Eligibility</button>
         </form>
 
         <div id="result"></div>
